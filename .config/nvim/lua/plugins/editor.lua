@@ -36,4 +36,12 @@ return {
       close_if_last_window = true,
     },
   },
+  {
+    "folke/which-key.nvim",
+    opts = function(_, opts)
+      vim.o.timeout = true
+      vim.o.timeoutlen = 1000
+      require("which-key").setup(opts)
+    end,
+  },
 }

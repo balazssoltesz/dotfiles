@@ -6,6 +6,7 @@ vim.o.foldcolumn = "0" -- '0' is not bad
 vim.o.foldlevel = 30 -- Using ufo provider need a large value, feel free to decrease the value
 vim.o.foldlevelstart = 30
 vim.o.foldenable = true
+vim.o.autochdir = false
 
 -- Undercurl
 vim.cmd([[let &t_Cs = "\e[4:3m"]])
