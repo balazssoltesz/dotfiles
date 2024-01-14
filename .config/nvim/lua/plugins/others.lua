@@ -42,4 +42,20 @@ return {
       close_if_last_window = true,
     },
   },
+  {
+    "folke/tokyonight.nvim",
+    lazy = true,
+    opts = {
+      style = "night",
+      on_highlights = function(hl, colors)
+        hl.DiagnosticUnnecessary = {
+          fg = "#ffabae",
+        }
+        hl.DiagnosticUnderlineError = {
+          fg = colors.error,
+          undercurl = true,
+        }
+      end,
+    },
+  },
 }
