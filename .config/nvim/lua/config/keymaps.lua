@@ -6,3 +6,5 @@ local keymap = vim.keymap.set
 local opts = { silent = true }
 
 keymap("i", "jj", "<ESC>", opts)
+
+keymap("n", "<leader>sx", require("telescope.builtin").resume, opts)
