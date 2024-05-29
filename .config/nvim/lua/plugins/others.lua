@@ -60,5 +60,17 @@ return {
   },
   {
     "LunarVim/bigfile.nvim",
+    lazy = true,
+    opts = {
+      features = { -- features to disable
+        "indent_blankline",
+        "illuminate",
+        "treesitter",
+        "syntax",
+        "matchparen",
+        "vimopts",
+        "filetype",
+      },
+    },
   },
 }
